@@ -1,0 +1,1209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+<link id="themeStylesheet" rel="stylesheet" href="assets/css/style.css">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
+<!-- Light (default) theme - optional since it's default -->
+<link id="swal-theme" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<!-- Dark theme - we'll switch to this dynamically -->
+<link id="swal-dark-theme" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.min.css" disabled>
+
+  <!--
+    - custom css link
+  -->
+ 
+ 
+  <!-- In your HTML <head> -->
+
+
+<!--  <link rel="stylesheet" href="assets/css/mode.css"> -->
+<!--   <link rel="stylesheet" href="assets/css/theme.css"> -->
+  <!-- Theme CSS -->
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+.hazard-background {
+  height: 30px;
+  color: white;
+  padding: 5px;
+  background-image: repeating-linear-gradient(
+    -55deg,
+    #000,
+    #000 20px,
+    #ffb101 20px,
+    #ffb101 40px
+  );
+}
+.justify-list li {
+  text-align: justify;
+}
+
+.hazard-border {
+  border: 10px solid pink;
+  border-image: repeating-linear-gradient(
+    -55deg,
+    #000,
+    #000 20px,
+    #ffb101 20px,
+    #ffb101 40px
+  ) 10;
+}
+.under_construction {
+  --yellow:       255, 215, 0;  /* CSS gold */
+
+  background: rgba(var(--yellow), 0.2);
+
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-image: repeating-linear-gradient(
+    45deg,
+    black,
+    black              5px,
+    rgb(var(--yellow)) 5px,
+    rgb(var(--yellow)) 10px
+  ) 10;
+}
+    </style>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+          <figure class="avatar-box">
+              <img src="assets/images/p1.png" alt="Husna" class="avatar-img"style="background-color: transparent;">
+          </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Nur Husna Maszani</h1>
+
+          <p class="title">Software Developer Fresh Graduate</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:husna.maszani@gmail.com" class="contact-link">husna.maszani@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:60-0136433436" class="contact-link">60-0136433436</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">June 23, 1982</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Melaka,Malaysia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/husnaa-zs?tab=repositories" class="social-link">
+              <ion-icon name="logo-github"style="color: #222222"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="www.linkedin.com/in/nur-husna-8244ba355" class="social-link">
+              <ion-icon name="logo-linkedin"style="color: #222222"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.behance.net/nurhusna14" class="social-link">
+              <ion-icon name="logo-behance"style="color: #222222"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Theme</button>
+          </li>
+          
+
+            <!--==================== Dark Mode Toggle Button ====================-->
+        <div>
+          <input type="checkbox" class="checkbox" id="toggleBtn" />
+          <label class="switch" for="toggleBtn">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
+        <!--==================== End====================-->
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h3 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+             A Computer Science graduate with a major in Software Engineering, driven by curiosity and a genuine love for crafting thoughtful digital experiences.
+                            With a growing focus on front-end and mobile development, recent experiences have centered on designing intuitive user interfaces and contributing to practical, real-world solutions.
+                            Known for a strong sense of detail, clear communication, and a natural inclination toward structure and design — both in code and in concept.
+                      
+          </p>
+
+          <p>
+<!--<p style="text-align: justify;">-->
+            Passionate about learning, and always eager to understand how things work beneath the surface. 
+                            Whether it's improving an interface or refining logic behind the scenes, the goal is always to create something that feels effortless to use.
+                            Currently exploring opportunities to grow, collaborate, and build meaningful software that combines clarity,
+                            functionality, and a touch of elegance.</p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI/UX design</h4>
+
+                <p class="service-item-text">
+                 The most modern and high-quality design made at a professional level.
+                                   
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                High-quality development of sites at the professional level.
+                                  
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+              
+              <div class="service-icon-box">
+                    <a href="https://husnamaszani.myportfolio.com/welcome" class="service-link">
+                <img src="assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+</a>
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Projects</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="assets/images/3.png" alt="Movie Streaming Website" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Movie Streaming Website</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                     A responsive web platform where users can browse and stream movie trailers, read synopses, 
+                                            and explore a catalog of movies. Users can filter movies by genre for easier discovery. 
+                                            This project emphasizes front-end functionality, UI/UX design, and effective content filtering.
+                                      
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/4.png" alt="Laundry Reservation System" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Laundry Reservation System</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    A system that allows users to book laundry slots based on real-time availability.
+                                            It offers multiple payment methods and a suggestion feature for users to provide feedback. 
+                                            This project addresses the limitations of manual laundry booking by digitizing and streamlining the process.
+                                     
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="assets/images/5.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>E-commerce App</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    A cross-platform mobile shopping application built using Flutter and Firebase.
+                                            Features include user authentication, dynamic product listings, shopping cart 
+                                            functionality, and responsive UI for a smooth shopping experience.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="assets/images/6.png" alt="Leave Request App (Joget Platform)" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Leave Request App (Joget Platform)</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                     A workflow-based application that enables employees to submit, track, and manage leave requests.
+                                            It includes an approval process, email notifications, calendar view of approved leaves, 
+                                            and role-based access for employees, managers, and admins.
+                                            Built using Joget Cloud.
+
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h3 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universiti Malaysia Terengganu | UMT </h4>
+
+              <span>August 2021 —  January 2025</span>
+
+              <p class="timeline-text">
+               Bachelor of Computer Science (Software Engineering) with Honors.  
+                                    Developed strong skills in Java, Flutter, and system design.  
+                                    Final Year Project: Laundry Management System with online payment and delivery tracking.
+                                
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Matriculation Malacca College</h4>
+
+              <span>2020 — 2021</span>
+
+              <p class="timeline-text">
+                 Computer Science Stream. Focused on core subjects like Mathematics, Computing, and Logic.  
+                                    Developed a strong academic foundation for university-level software development.
+                                
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Selandar Integrated Boarding School</h4>
+
+              <span>2018 — 2019</span>
+
+              <p class="timeline-text">
+                Completed upper secondary education with a focus on Science and Mathematics.  
+                                    Active in school leadership programs and IT-related co-curricular activities.
+                               
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+           <ol class="timeline-list">
+
+                            <li class="timeline-item">
+
+                                <h4 class="h4 timeline-item-title">Software Development | Impressive Communication Sdn Bhd, Petaling Jaya</h4>
+
+                                <span>August 2024 — January 2025</span>
+
+                                <p class="timeline-text">
+                                    Internship at Impressive Communication Sdn Bhd, collaborating as a vendor on mobile application project for Tenaga Nasional Berhad (TNB) as a client. 
+                                    Responsibilities included:</p>
+                               <ul class="timeline-text" style="padding-left: 1.5rem; margin-top: 0.5rem;">
+                            <li>• Contributing to the development of mobile application, with a focus on front-end User Interface (UI) design.</li>
+                            <li>• Designed and implemented responsive UI interfaces for iPhone, iPad, and Android devices.</li>
+                            <li>• Created and executed detailed test scripts to validate application functionality</li>
+                            <li>• Resolved UI/UX bugs to enhance design consistency and usability.</li>
+                            <li>• Collaborating closely with the design team to translate wireframes and UI concepts into fully functional and interactive components.</li>
+                                </ul>
+                            </li> 
+                            
+           </ol>
+                           
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Programming Languages</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+               <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+               <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                  <h5 class="h5">Dart</h5>
+                                    <data value="30">30%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 30%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Phyton</h5>
+                                    <data value="20">20%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+               <div class="skill-progress-fill" style="width: 20%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+              <h5 class="h5">C++</h5>
+                                    <data value="20">20%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 20%;"></div>
+              </div>
+
+            </li>
+<li class="skills-item">
+
+                                <div class="title-wrapper">
+                                    <h5 class="h5">HTML/CSS/Javascript</h5>
+                                    <data value="50">50%</data>
+                                </div>
+
+                                <div class="skill-progress-bg">
+                                    <div class="skill-progress-fill" style="width: 50%;"></div>
+                                </div>
+
+                            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h3 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>UI/UX design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Mobile Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>UI/UX design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Mobile Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="ui/ux design">
+              <a href="https://www.behance.net/gallery/225054943/Laundry-Website/modules/1286295431">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/1.png" alt="Laundry Web Design" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Laundry Web Design</h3>
+
+                <p class="project-category">UI/UX design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ui/ux design">
+              <a href="https://www.behance.net/gallery/225572147/A-Cat-Only-App-UXUI-Case-Study">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pawradise.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Pawradise Pet Sitter Mobile App</h3>
+
+                <p class="project-category">UI/UX design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ui/ux design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/stream.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Streaming Website</h3>
+
+                <p class="project-category">UI/UX design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/husnaa-zs/StreamingVideoWebsite">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/movie.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Streaming Movie Website</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/husnaa-zs/LaundryStreamlining">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/laundry.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Streamlining Laundry Website</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile applications">
+              <a href="#">
+<div class="under_construction">
+ 
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/grocer.png" alt="task manager" loading="lazy">
+                </figure>
+</div>
+                <h3 class="project-title">Grocery App</h3>
+
+                <p class="project-category">Mobile Applications</p>
+
+              </a>
+            </li>
+             <li class="project-item  active" data-filter-item data-category="mobile applications">
+              <a href="#">
+                  <div class="under_construction">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/imaan.png" alt="task manager" loading="lazy">
+                </figure>
+</div>
+                <h3 class="project-title">Imaan App</h3>
+
+                <p class="project-category">Mobile Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+                  <div class="under_construction">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/task.png" alt="arrival" loading="lazy">
+                </figure>
+</div>
+                <h3 class="project-title">Study Task</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+       <header>
+    <h2 class="h3 article-title">Why Dark Mode?</h2>
+  </header>
+
+  <section class="blog-posts">
+
+    <ul class="blog-posts-list">
+
+      <li class="blog-post-item">
+        <a href="https://eyeondesign.aiga.org/a-brief-history-of-dark-mode-from-the-matrix-like-displays-of-the-early-80s-to-today/">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/d1.png" alt="Origin of Dark Mode" loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+
+            <div class="blog-meta">
+              <p class="blog-category">History</p>
+              <span class="dot"></span>
+              <time datetime="2025-01-01"></time>
+            </div>
+
+            <h3 class="h3 blog-item-title">The Origin of Dark Mode</h3>
+
+            <p class="blog-text">
+              Dark mode was originally used in early computer systems due to the limitations of CRT monitors. It has since evolved into a feature that reduces eye strain and improves battery life.
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="blog-post-item">
+        <a href="https://www.eyecarecenter.com/eye-care-resources/is-dark-mode-better-for-your-eyes">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/d2.png" alt="Dark Mode Benefits" loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+
+            <div class="blog-meta">
+              <p class="blog-category">Health</p>
+              <span class="dot"></span>
+              <time datetime="2025-01-01"></time>
+            </div>
+
+            <h3 class="h3 blog-item-title">Eye Comfort & Health Benefits</h3>
+
+            <p class="blog-text">
+              Dark mode reduces the amount of blue light emitted by screens, which helps prevent eye fatigue and supports better sleep when using devices at night.
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="blog-post-item">
+        <a href="https://www.bbc.com/mediacentre/2025/bbc-rd-dark-mode">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/d2.png" alt="Battery Saving" loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+
+            <div class="blog-meta">
+              <p class="blog-category">Technology</p>
+              <span class="dot"></span>
+              <time datetime="2025-01-01"></time>
+            </div>
+
+            <h3 class="h3 blog-item-title">Energy Efficiency</h3>
+
+            <p class="blog-text">
+              On OLED and AMOLED screens, dark mode saves power by turning off pixels, extending battery life on smartphones and tablets.
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="blog-post-item">
+        <a href="https://www.guvi.in/blog/designing-for-dark-mode-aesthetics/">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/d3.png" alt="Design Aesthetic" loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+
+            <div class="blog-meta">
+              <p class="blog-category">Design</p>
+              <span class="dot"></span>
+              <time datetime="2025-01-01"></time>
+            </div>
+
+            <h3 class="h3 blog-item-title">Modern Aesthetic Appeal</h3>
+
+            <p class="blog-text">
+              Many users find dark mode visually appealing and elegant. It allows colorful elements and images to pop more clearly against a dark background.
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+    </ul>
+
+  </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h3 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d199666.5651251294!2d102.1983311!3d2.261402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smy!4v1647608789441!5m2!1sen!2smy"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+       <section class="contact-form">
+  <h3 class="h3 form-title">Contact Form</h3>
+
+  <form id="contactForm">
+    <div class="input-wrapper">
+      <!-- ‹— Correct type here —› -->
+      <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+      <input type="email" name="email" class="form-input" placeholder="Email address" required>
+    </div>
+    <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+
+    <button class="form-btn" type="submit">
+      <ion-icon name="paper-plane"></ion-icon>
+      <span>Send Message</span>
+    </button>
+  </form>
+</section>
+
+
+
+
+      </article>
+
+    </div>
+
+  </main>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault(); // Prevent default submission
+
+  const fullname = document.querySelector('[name="fullname"]').value;
+  const email = document.querySelector('[name="email"]').value;
+  const message = document.querySelector('[name="message"]').value;
+
+  const formBody = new URLSearchParams();
+  formBody.append("fullname", fullname);
+  formBody.append("email", email);
+  formBody.append("message", message);
+  const isDarkMode = document.getElementById('themeStylesheet')
+                      .getAttribute('href')
+                      .includes('thememode.css');
+  fetch("submitcontact.jsp", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: formBody.toString()
+  })
+  .then(res => res.text())
+  .then(response => {
+    if (response.trim() === "success") {
+       Swal.fire({
+        icon: 'success',
+        title: 'Message Sent!',
+        text: 'Thank you for getting in touch, ' + fullname + '!',
+        confirmButtonColor: '#3085d6',
+         background: isDarkMode ? '#1e1e1e' : '#fff',
+        color: isDarkMode ? '#f1f1f1' : '#111'
+      });
+      document.getElementById("contactForm").reset();
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: response,
+        confirmButtonColor: '#d33',
+        background: isDarkMode ? '#1e1e1e' : '#fff',
+        color: isDarkMode ? '#f1f1f1' : '#111'
+      });
+    }
+  })
+  .catch(err => {
+    Swal.fire({
+      icon: 'error',
+      title: 'Request Failed',
+      text: err.toString(),
+      confirmButtonColor: '#d33',
+         background: isDarkMode ? '#1e1e1e' : '#fff',
+      color: isDarkMode ? '#f1f1f1' : '#111'
+    });
+  });
+});
+</script>
+<!-- SweetAlert2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+ <script>
+  const toggleButton = document.getElementById('toggleBtn');
+  const themeStylesheet = document.getElementById('themeStylesheet');
+const swalLight = document.getElementById('swal-light');
+const swalDark = document.getElementById('swal-dark');
+  toggleButton.addEventListener('click', () => {
+    const currentTheme = themeStylesheet.getAttribute('href');
+    if (currentTheme.includes('style.css')) {
+      themeStylesheet.setAttribute('href', 'assets/css/thememode.css');
+      console.log("Switching to theme:", themeStylesheet.getAttribute('href'));
+ swalLight.disabled = true;
+    swalDark.disabled = false;
+    } else {
+      themeStylesheet.setAttribute('href', 'assets/css/style.css');
+       swalLight.disabled = false;
+    swalDark.disabled = true;
+    }
+    
+  });
+</script>
+
+
+
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
